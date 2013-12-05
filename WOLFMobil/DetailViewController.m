@@ -1,22 +1,22 @@
 //
-//  AuftragViewController.m
+//  DetailViewController.m
 //  WOLFMobil
 //
-//  Created by Martin Kuenz on 12/5/13.
+//  Created by Martin on 05.12.13.
 //  Copyright (c) 2013 Martin Kuenz. All rights reserved.
 //
 
-#import "AuftragViewController.h"
-#import "AuftragCell.h"
+#import "DetailViewController.h"
 
-@interface AuftragViewController ()
+@interface DetailViewController ()
 
 @end
 
-@implementation AuftragViewController
+@implementation DetailViewController
 {
-    NSArray *tableData;
+    NSArray *Datei;
 }
+@synthesize tableDatei;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    tableData = [NSArray arrayWithObjects:@"Test", nil];
+    Datei = [NSArray arrayWithObjects:@"AV", @"Baubetreuer", @"Einreichplan", @"Static",@"Unterkunft.pdf" , nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,20 +47,20 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return Datei.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIndentifier= @"Auftrag";
+    static NSString *CellIndentifier= @"Datei";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIndentifier];
     
     if(cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIndentifier];
     }
     
-    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
-    cell.textLabel.font = [UIFont systemFontOfSize:15.0];
+    cell.textLabel.text = [Datei objectAtIndex:indexPath.row];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }

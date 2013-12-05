@@ -24,6 +24,8 @@
 		3730A3931850C43F00B8EC4F /* AuswahlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3730A3921850C43F00B8EC4F /* AuswahlViewController.m */; };
 		3730A3951850CA5A00B8EC4F /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3730A3941850CA5A00B8EC4F /* logo.jpg */; };
 		3730A3981850D24900B8EC4F /* AuftragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3730A3971850D24900B8EC4F /* AuftragViewController.m */; };
+		B88471181850F43A00CB4300 /* AuftragCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B88471171850F43A00CB4300 /* AuftragCell.m */; };
+		B8B6C5C41850E615004D8038 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B6C5C31850E615004D8038 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		3730A3941850CA5A00B8EC4F /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 		3730A3961850D24900B8EC4F /* AuftragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuftragViewController.h; sourceTree = "<group>"; };
 		3730A3971850D24900B8EC4F /* AuftragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuftragViewController.m; sourceTree = "<group>"; };
+		B88471161850F43A00CB4300 /* AuftragCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuftragCell.h; sourceTree = "<group>"; };
+		B88471171850F43A00CB4300 /* AuftragCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuftragCell.m; sourceTree = "<group>"; };
+		B8B6C5C21850E615004D8038 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B8B6C5C31850E615004D8038 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,10 @@
 				3730A3921850C43F00B8EC4F /* AuswahlViewController.m */,
 				3730A3961850D24900B8EC4F /* AuftragViewController.h */,
 				3730A3971850D24900B8EC4F /* AuftragViewController.m */,
+				B8B6C5C21850E615004D8038 /* DetailViewController.h */,
+				B8B6C5C31850E615004D8038 /* DetailViewController.m */,
+				B88471161850F43A00CB4300 /* AuftragCell.h */,
+				B88471171850F43A00CB4300 /* AuftragCell.m */,
 			);
 			path = WOLFMobil;
 			sourceTree = "<group>";
@@ -212,6 +222,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Martin Kuenz";
 				TargetAttributes = {
+					3730A3491850B5A500B8EC4F = {
+						DevelopmentTeam = RKDQPG2MBM;
+					};
 					3730A36A1850B5A500B8EC4F = {
 						TestTargetID = 3730A3491850B5A500B8EC4F;
 					};
@@ -264,10 +277,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3730A3641850B5A500B8EC4F /* ViewController.m in Sources */,
+				B88471181850F43A00CB4300 /* AuftragCell.m in Sources */,
 				3730A35E1850B5A500B8EC4F /* AppDelegate.m in Sources */,
 				3730A3931850C43F00B8EC4F /* AuswahlViewController.m in Sources */,
 				3730A35A1850B5A500B8EC4F /* main.m in Sources */,
 				3730A3981850D24900B8EC4F /* AuftragViewController.m in Sources */,
+				B8B6C5C41850E615004D8038 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,9 +411,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WOLFMobil/WOLFMobil-Prefix.pch";
 				INFOPLIST_FILE = "WOLFMobil/WOLFMobil-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -410,9 +427,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WOLFMobil/WOLFMobil-Prefix.pch";
 				INFOPLIST_FILE = "WOLFMobil/WOLFMobil-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -480,6 +499,7 @@
 				3730A37E1850B5A500B8EC4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3730A37F1850B5A500B8EC4F /* Build configuration list for PBXNativeTarget "WOLFMobilTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +508,7 @@
 				3730A3811850B5A500B8EC4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
