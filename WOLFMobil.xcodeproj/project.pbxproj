@@ -21,6 +21,9 @@
 		3730A36F1850B5A500B8EC4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3730A3511850B5A500B8EC4F /* UIKit.framework */; };
 		3730A3771850B5A500B8EC4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3730A3751850B5A500B8EC4F /* InfoPlist.strings */; };
 		3730A3791850B5A500B8EC4F /* WOLFMobilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3730A3781850B5A500B8EC4F /* WOLFMobilTests.m */; };
+		3730A3931850C43F00B8EC4F /* AuswahlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3730A3921850C43F00B8EC4F /* AuswahlViewController.m */; };
+		3730A3951850CA5A00B8EC4F /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3730A3941850CA5A00B8EC4F /* logo.jpg */; };
+		3730A3981850D24900B8EC4F /* AuftragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3730A3971850D24900B8EC4F /* AuftragViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		3730A3741850B5A500B8EC4F /* WOLFMobilTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WOLFMobilTests-Info.plist"; sourceTree = "<group>"; };
 		3730A3761850B5A500B8EC4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3730A3781850B5A500B8EC4F /* WOLFMobilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WOLFMobilTests.m; sourceTree = "<group>"; };
+		3730A3911850C43F00B8EC4F /* AuswahlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuswahlViewController.h; sourceTree = "<group>"; };
+		3730A3921850C43F00B8EC4F /* AuswahlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuswahlViewController.m; sourceTree = "<group>"; };
+		3730A3941850CA5A00B8EC4F /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		3730A3961850D24900B8EC4F /* AuftragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuftragViewController.h; sourceTree = "<group>"; };
+		3730A3971850D24900B8EC4F /* AuftragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuftragViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 		3730A3531850B5A500B8EC4F /* WOLFMobil */ = {
 			isa = PBXGroup;
 			children = (
+				3730A3941850CA5A00B8EC4F /* logo.jpg */,
 				3730A35C1850B5A500B8EC4F /* AppDelegate.h */,
 				3730A35D1850B5A500B8EC4F /* AppDelegate.m */,
 				3730A35F1850B5A500B8EC4F /* Main.storyboard */,
@@ -119,6 +128,10 @@
 				3730A3631850B5A500B8EC4F /* ViewController.m */,
 				3730A3651850B5A500B8EC4F /* Images.xcassets */,
 				3730A3541850B5A500B8EC4F /* Supporting Files */,
+				3730A3911850C43F00B8EC4F /* AuswahlViewController.h */,
+				3730A3921850C43F00B8EC4F /* AuswahlViewController.m */,
+				3730A3961850D24900B8EC4F /* AuftragViewController.h */,
+				3730A3971850D24900B8EC4F /* AuftragViewController.m */,
 			);
 			path = WOLFMobil;
 			sourceTree = "<group>";
@@ -228,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3730A3951850CA5A00B8EC4F /* logo.jpg in Resources */,
 				3730A3661850B5A500B8EC4F /* Images.xcassets in Resources */,
 				3730A3581850B5A500B8EC4F /* InfoPlist.strings in Resources */,
 				3730A3611850B5A500B8EC4F /* Main.storyboard in Resources */,
@@ -251,7 +265,9 @@
 			files = (
 				3730A3641850B5A500B8EC4F /* ViewController.m in Sources */,
 				3730A35E1850B5A500B8EC4F /* AppDelegate.m in Sources */,
+				3730A3931850C43F00B8EC4F /* AuswahlViewController.m in Sources */,
 				3730A35A1850B5A500B8EC4F /* main.m in Sources */,
+				3730A3981850D24900B8EC4F /* AuftragViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +400,7 @@
 				GCC_PREFIX_HEADER = "WOLFMobil/WOLFMobil-Prefix.pch";
 				INFOPLIST_FILE = "WOLFMobil/WOLFMobil-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -397,6 +414,7 @@
 				GCC_PREFIX_HEADER = "WOLFMobil/WOLFMobil-Prefix.pch";
 				INFOPLIST_FILE = "WOLFMobil/WOLFMobil-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
