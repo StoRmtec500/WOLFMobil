@@ -10,7 +10,7 @@
 
 @implementation AuftragCell
 
-@synthesize lblVon;
+@synthesize lblVon, btnAuftragNr, lblStartzeit, lblBis, lblGruppe, lblBaustelleAdresse, lblBaustelleName, lblInfo;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

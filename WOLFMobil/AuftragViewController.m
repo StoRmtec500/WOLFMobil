@@ -7,7 +7,7 @@
 //
 
 #import "AuftragViewController.h"
-#import "AuftragCell.h"
+
 
 @interface AuftragViewController ()
 
@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    tableData = [NSArray arrayWithObjects:@"Test", nil];
+    tableData = [NSArray arrayWithObjects:@"AU1303515", @"10.12.2013", @"08:00", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,13 +53,20 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIndentifier= @"Auftrag";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIndentifier];
+    AuftragCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIndentifier];
     
     if(cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIndentifier];
+        cell = [[AuftragCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIndentifier];
     }
     
-    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    cell.btnAuftragNr.titleLabel.text = @"AU1303515";
+    cell.lblVon.text = @"10.12.2013";
+    cell.lblStartzeit.text = @"08:00";
+    cell.lblBis.text = @"12.12.2013";
+    cell.lblGruppe.text = @"LKW";
+    cell.lblBaustelleName.text = @"Schneider Armin";
+    cell.lblBaustelleAdresse.text = @"Berggasse 4, 4802 Ebensee";
+    cell.lblInfo.text = @"Fenster einstellen";
     cell.textLabel.font = [UIFont systemFontOfSize:15.0];
     
     return cell;

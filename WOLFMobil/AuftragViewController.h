@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AuftragCell.h"
 
 @interface AuftragViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *AuftragTable;
