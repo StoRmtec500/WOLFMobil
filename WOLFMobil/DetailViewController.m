@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    Datei = [NSArray arrayWithObjects:@"AV", @"Baubetreuer", @"Einreichplan", @"Static",@"Unterkunft.pdf" , nil];
+    Datei = [NSArray arrayWithObjects:@"AV", @"Baubetreuer", @"Einreichplan", @"Static",@"Mobile Daten" , nil];
 }
 
 - (void)didReceiveMemoryWarning
